@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer pagina</title>
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+
+    <!-- Creamos nuestro menu -->
+    <nav id="menu">
+        <!-- Creamos un listado-->
+        <ul class="menu">
+            <li class="logo">
+                <a href="">
+                    <img src="./img/logo.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="./index.html"> Inicio </a>
+            </li>
+            <li>
+                <a href="./formulario.html"> Contactenos </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        
+        <form>
+           <label for="">Nombre: </label>
+           <input type="text" name="nombre" id="nombre"> <!-- ID = Identificador unico, NAME = nombre unico-->
+           <br>
+           <label for="">Edad: </label>
+           <input type="number" name="edad" id="edad"> 
+           <br>
+           <input type="button" onclick="enviodatos()" value="Enviar">
+           <br>
+           <button type="submit" onclick="enviodatos()"> Enviar </button>
+
+        </form>
+
+    </div>
+
+    <footer>
+        <p>Creado por Cristhian Galvis</p>
+    </footer>
+
+
+    <script src="./js/formulario.js"></script>
+    
+</body>
+</html>
